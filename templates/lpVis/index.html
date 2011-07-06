@@ -1,0 +1,12 @@
+
+{% if latest_landing_pages %}
+    <ul>
+        {% for landing_page in latest_landing_pages %}
+            <li><a href="/lpVis/{{ landing_page.id }}/"></a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>This is my cool page with nothing.</p>
+{% endif %}
+
+
